@@ -1,0 +1,17 @@
+body {
+    margin: 0 0 0 0;
+    background-color: skyblue;
+}
+.grass {
+    background-color:darkgreen;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+}
+
+.sun {
+  background: #f1c40f;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
