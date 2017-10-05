@@ -36,6 +36,9 @@ body {
   90% {
     background: pink;
   }
+    95% {
+        background: #FF622D;
+    }
   100% {
     background: #2c3e50;
   }
