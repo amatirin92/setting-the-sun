@@ -1,12 +1,14 @@
 body {
     margin: 0 0 0 0;
     background-color: skyblue;
+    animation: changeskycolors 20s infinite;
 }
 .grass {
     background-color:darkgreen;
     height: 600px;
-    width: 100%;
+    width: 1920px;
     position: absolute;
+    margin-top: 10px;
 }
 
 .sun {
@@ -14,4 +16,48 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+    animation: sun 10s linear infinite;
+}
+
+
+@keyframes changeskycolors{
+    10% {
+        background-color: pink;
+    }
+    15% {
+        background-color: skyblue;
+    }
+    
+    60% {
+        background-color: pink;
+    }
+    70% {
+        background-color: orange;
+    }
+    75% {
+        background-color: red;
+    }
+    
+}
+
+@keyframes sun {
+  0% {
+    transform: translate(-200px, 200px);
+    background: #d35400;
+  }
+  25% {
+    transform: translate(330px, 0px);
+    background: #f1c40f;
+  } 
+  50% {
+    transform: translate(860px, -50px);
+  }
+  75% {
+    transform: translate(1390px, 0px);
+    background: #f1c40f;
+  }
+  100% {
+    transform: translate(1920px, 200px);
+    background: #e74c3c;
+  }
 }
