@@ -1,7 +1,7 @@
 body {
     margin: 0 0 0 0;
     background-color: skyblue;
-    animation: changeskycolors 20s infinite;
+    animation: changeskycolors 10s infinite;
 }
 .grass {
     background-color:darkgreen;
@@ -21,22 +21,24 @@ body {
 
 
 @keyframes changeskycolors{
-    10% {
-        background-color: pink;
-    }
-    15% {
-        background-color: skyblue;
-    }
-    
-    60% {
-        background-color: pink;
-    }
-    70% {
-        background-color: orange;
-    }
-    75% {
-        background-color: red;
-    }
+ 0% {
+    background: #2c3e50;
+  }
+  10% {
+    background: pink;
+  }
+  30% {
+    background: #3498db;
+  }
+  70%{
+    background: #3498db;
+  }
+  90% {
+    background: pink;
+  }
+  100% {
+    background: #2c3e50;
+  }
     
 }
 
