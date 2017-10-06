@@ -1,6 +1,7 @@
 body {
     margin: 0 0 0 0;
     background-color: skyblue;
+    -webkit-animation: changeskycolors 10s infinite;
     animation: changeskycolors 10s infinite;
 }
 .grass {
@@ -16,7 +17,34 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+    -webkit-animation: sun 10s linear infinite;
     animation: sun 10s linear infinite;
+}
+
+
+@-webkit-keyframes changeskycolors{
+ 0% {
+    background: #2c3e50;
+  }
+  10% {
+    background: pink;
+  }
+  30% {
+    background: #3498db;
+  }
+  70%{
+    background: #3498db;
+  }
+  90% {
+    background: pink;
+  }
+    95% {
+        background: #FF982D;
+    }
+  100% {
+    background: #2c3e50;
+  }
+    
 }
 
 
@@ -37,7 +65,7 @@ body {
     background: pink;
   }
     95% {
-        background: #FF622D;
+        background: #FF982D;
     }
   100% {
     background: #2c3e50;
@@ -45,23 +73,55 @@ body {
     
 }
 
-@keyframes sun {
+@-webkit-keyframes sun {
   0% {
+    -webkit-transform: translate(-200px, 200px);
     transform: translate(-200px, 200px);
     background: #d35400;
   }
   25% {
+    -webkit-transform: translate(330px, 0px);
     transform: translate(330px, 0px);
     background: #f1c40f;
   } 
   50% {
+    -webkit-transform: translate(860px, -50px);
     transform: translate(860px, -50px);
   }
   75% {
+    -webkit-transform: translate(1390px, 0px);
     transform: translate(1390px, 0px);
     background: #f1c40f;
   }
   100% {
+    -webkit-transform: translate(1920px, 200px);
+    transform: translate(1920px, 200px);
+    background: #e74c3c;
+  }
+}
+
+@keyframes sun {
+  0% {
+    -webkit-transform: translate(-200px, 200px);
+    transform: translate(-200px, 200px);
+    background: #d35400;
+  }
+  25% {
+    -webkit-transform: translate(330px, 0px);
+    transform: translate(330px, 0px);
+    background: #f1c40f;
+  } 
+  50% {
+    -webkit-transform: translate(860px, -50px);
+    transform: translate(860px, -50px);
+  }
+  75% {
+    -webkit-transform: translate(1390px, 0px);
+    transform: translate(1390px, 0px);
+    background: #f1c40f;
+  }
+  100% {
+    -webkit-transform: translate(1920px, 200px);
     transform: translate(1920px, 200px);
     background: #e74c3c;
   }
