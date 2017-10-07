@@ -2,7 +2,7 @@ body {
     margin: 0 0 0 0;
     background-color: skyblue;
     -webkit-animation: changeskycolors 10s infinite;
-    animation: changeskycolors 10s infinite;
+    animation: changeskycolors 11s infinite;
 }
 .grass {
     background-color:darkgreen;
